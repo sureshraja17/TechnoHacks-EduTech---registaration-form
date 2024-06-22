@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+   <img src="wander-high-resolution-logo-transparent.png" >
+    <div class="all">
+        <div class="container">
+            <div class="title">REGISTRATION </div>
+            <form action="#">
+                <div class="User-form">
+                    <div class="user-input">
+                        <span class="details" required>Full Name </span>
+                        <input type="text" placeholder="Enter Your Name" required>
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+                    <div class="user-input">
+                        <span class="details" required>User Name</span>
+                        <input type="text" placeholder="Enter User Name" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="user-input">
+                        <span class="details" required>Email</span>
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="user-input">
+                        <span class="details" required>Phone Number</span>
+                        <input type="number" placeholder="Enter Your Number" required>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="user-input">
+                        <span class="details" required>Password</span>
+                        <input type="password" placeholder="Enter Your password" required>
+                        <i class="fa-solid fa-lock"></i>
+
+                    </div>
+                    <div class="user-input">
+                        <span class="details" required> Confirm Password</span>
+                        <input type="password" placeholder="Confirm Your password" required>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+
+                </div>
+                <div class="Gender-detail">
+                    <span class="Gender-title">Gender</span>
+                    <div class="category ">
+                        <label for="">
+                            <span><input type="radio" name="Gender"> Male</span>
+                        </label>
+                        <label for="">
+                            <span><input type="radio" name="Gender"> Female</span>
+                        </label>
+                        <label for="">
+                            <span><input type="radio" name="Gender"> Prefer Not To Say</span>
+                        </label>
+
+
+                    </div>
+                </div>
+                <div class="button" onclick="reg()">
+                    <input type="submit" value="Register"></input>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+    <script>
+        function reg() {
+        
+            Swal.fire({
+                title: "Good job!",
+                text: "Complete Successfully!",
+                icon: "success"
+            });
+        }
+
+    </script>
+
+</body>
+
+
+</html>
